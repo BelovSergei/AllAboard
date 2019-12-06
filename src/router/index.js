@@ -6,23 +6,15 @@ import { Start } from "../views/homepage/Start";
 
 Vue.use(VueRouter);
 
-const routes = [
-  {
+const routes = [{
     path: "/",
-    component: HomepageMV,
-    children: [
-      {
-        path: "/",
-        component: Start
-      }
-    ]
-  }
-];
+    component: HomepageMV
+}];
 
 const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
-  routes
+    mode: "history",
+    base: process.env.BASE_URL,
+    routes
 });
 
 export default router;
