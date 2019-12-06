@@ -24,7 +24,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/tesla0.5e59dfe2.jpg"
   },
   {
-    "revision": "afa7efff0e04037665d9434874bbc013",
+    "revision": "520f950f376ddfdcf75db1ad75cca0e3",
     "url": "/index.html"
   },
   {
