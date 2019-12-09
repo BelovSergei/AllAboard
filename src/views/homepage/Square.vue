@@ -1,39 +1,40 @@
 <template>
   <v-container grid-list-xs ma-0 pa-0>
-    <v-layout column wrap align-center>
-      <v-layout row wrap align-center justify-center>
-        <v-flex ma-2 sm10 md5>
+    <v-row class="column wrap align-center">
+      <v-row class="align-center justify-center">
+        <v-col class="ma-2" cols="12" sm="10" md="5">
           <v-card elevation-20 height="100%">
-            <v-flex xs12 offset-md4 offset-sm1>
-              <v-flex xs10 md5 headline mb-5 mt-5>Free text</v-flex>
-              <v-flex xs10 mb-5>
+            <v-col cols="12" class="offset-md-2 offset-sm-1">
+              <v-col cols="10" md="5" class="headline mb-5 mt-5"
+                >Free text</v-col
+              >
+              <v-col cols="10" class="mb-5">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Perferendis beatae dolorem earum dolorum quae optio magni
                 voluptates excepturi, architecto sint minima fuga voluptatibus,
                 aut ipsam enim ex praesentium reiciendis nesciunt!
-              </v-flex>
+              </v-col>
               <v-btn color="black" style="color: white" class="margin-button"
                 >CTA text</v-btn
               >
-            </v-flex>
+            </v-col>
           </v-card>
-        </v-flex>
-        <v-flex ma-2 md5 sm10>
-          <v-card elevation-20 height="100%">
+        </v-col>
+        <v-col class="ma-2" cols="12" md="5" sm="10">
+          <v-card class="elevation-20" height="100%">
             <v-img
               max-height="280px"
               min-height="280px"
               aspect-ratio="16:9"
               :src="require('@/assets/TeslaFront/part0.png')"
-            >
-            </v-img>
+            ></v-img>
           </v-card>
-        </v-flex>
-      </v-layout>
+        </v-col>
+      </v-row>
       <!-- new row -->
-      <v-layout row wrap justify-center>
-        <v-flex ma-2 sm10 md5>
-          <v-card height="100%" elevation-20>
+      <v-row class="justify-center">
+        <v-col class="ma-2" cols="12" sm="10" md="5">
+          <v-card height="100%" class="elevation-20">
             <v-img
               max-height="280px"
               min-height="280px"
@@ -41,25 +42,25 @@
               :src="require('@/assets/TeslaFront/part0.png')"
             />
           </v-card>
-        </v-flex>
-        <v-flex ma-2 sm10 md5>
+        </v-col>
+        <v-col class="ma-2" cols="12" sm="10" md="5">
           <v-card elevation-20 height="100%">
-            <v-flex md10 offset-md1 offset-sm1 sm12>
-              <v-flex xs10 headline mb-5 mt-5>Free text</v-flex>
-              <v-flex xs10 mb-5>
+            <v-col md="10" class="offset-md-1 offset-sm-1" sm="12">
+              <v-col cols="10" class=" headline mb-5 mt-5">Free text</v-col>
+              <v-col cols="10" class="mb-5">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Perferendis beatae dolorem earum dolorum quae optio magni
                 voluptates excepturi, architecto sint minima fuga voluptatibus,
                 aut ipsam enim ex praesentium reiciendis nesciunt!
-              </v-flex>
+              </v-col>
               <v-btn color="black" style="color: white" class="margin-button"
                 >CTA text</v-btn
               >
-            </v-flex>
+            </v-col>
           </v-card>
-        </v-flex>
-      </v-layout>
-    </v-layout>
+        </v-col>
+      </v-row>
+    </v-row>
   </v-container>
 </template>
 
