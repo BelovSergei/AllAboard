@@ -11,16 +11,18 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
-
 importScripts(
-  "/precache-manifest.cea6cdc4981b8b81c854fd63a57487d0.js"
+  "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "aa-vue"});
+importScripts(
+  "/allaboard/precache-manifest.8d64fc306db73e55fe06dcfd4989acc6.js"
+);
 
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
+workbox.core.setCacheNameDetails({ prefix: "aa-vue" });
+
+self.addEventListener("message", event => {
+  if (event.data && event.data.type === "SKIP_WAITING") {
     self.skipWaiting();
   }
 });
