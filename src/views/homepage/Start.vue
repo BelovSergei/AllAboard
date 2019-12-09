@@ -4,8 +4,14 @@
       <v-layout column align-center justify-center ma-12 pt-12>
         <v-flex xs12 text-md-center text-xs-center text-sm-center>
           <!-- <v-flex display-3 text-color-title font-weight-bold bold>All Aboard</v-flex> -->
-            <v-img height="200px" width="450px" :src="require('@/assets/logo_transparent.png')" />
-          <v-flex display-1 text-color-subtitle>Your Tesla parts distributor</v-flex>
+          <v-img
+            height="200px"
+            width="450px"
+            :src="require('@/assets/logo_transparent.png')"
+          />
+          <v-flex display-1 text-color-subtitle
+            >Your Tesla parts distributor</v-flex
+          >
         </v-flex>
       </v-layout>
     </v-container>
